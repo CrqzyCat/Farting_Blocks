@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "farting_blocks",
+  "version": "${version}",
+  "name": "Farting Blocks",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/farting_blocks/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.farting_blocks.farting_blocks.client.Farting_blocksDataGenerator"
+    ],
+    "client": [
+      "me.farting_blocks.farting_blocks.client.Farting_blocksClient"
+    ],
+    "main": [
+      "me.farting_blocks.farting_blocks.Farting_blocks"
+    ]
+  },
+  "mixins": [
+    "farting_blocks.mixins.json",
+    {
+      "config": "farting_blocks.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
