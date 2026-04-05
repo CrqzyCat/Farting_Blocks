@@ -1,0 +1,10 @@
+{
+  "fart": {
+    "sounds": [
+      {
+        "name": "farting_blocks:dry-fart",
+        "stream": false
+      }
+    ]
+  }
+}
